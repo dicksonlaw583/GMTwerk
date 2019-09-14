@@ -7,7 +7,8 @@
         "79940ac2-9f00-4a4f-94b1-86a3adb84970",
         "af42365c-54c0-4d2f-b9ef-8da6813e1be6",
         "2ca7aa84-fe94-4575-9115-55951ceb7657",
-        "6ce33f40-c140-4068-9e32-3ea3f71315e3"
+        "6ce33f40-c140-4068-9e32-3ea3f71315e3",
+        "067ae7b0-f71f-4bf2-9268-e5ff9fdac90a"
     ],
     "filterType": "GMScript",
     "folderName": "GMTwerk",
