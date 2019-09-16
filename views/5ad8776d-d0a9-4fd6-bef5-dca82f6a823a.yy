@@ -15,7 +15,8 @@
         "b9ecf92e-be12-411c-a6ab-bcc0a3a8195f",
         "6abadc2d-b84d-4828-8a80-84c7cb5e5369",
         "c3e31dde-453a-4e0b-b85f-0b27f61195a9",
-        "b4511e2c-87c0-4e78-b90c-c747266708b1"
+        "b4511e2c-87c0-4e78-b90c-c747266708b1",
+        "10407a2e-a877-4dcb-9828-5490ec52a1d8"
     ],
     "filterType": "GMScript",
     "folderName": "GMTwerk_test",

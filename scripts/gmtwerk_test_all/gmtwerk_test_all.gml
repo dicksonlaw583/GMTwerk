@@ -7,6 +7,7 @@ gmtwerk_test_repeater();
 gmtwerk_test_timekeeper();
 gmtwerk_test_worker();
 gmtwerk_test_responder();
+gmtwerk_test_collector();
 ds_map_destroy(global.__gmtwerk_suite_callbacks__);
 time_b = current_time;
 show_debug_message("GMTwerk tests done in " + string(time_b-time_a) + "ms.");

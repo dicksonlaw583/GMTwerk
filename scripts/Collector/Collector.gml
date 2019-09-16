@@ -1,5 +1,5 @@
-///@func Responder(conditionPayload, onTrigger, ...)
-///@param conditionPayload
+///@func Collector(n, onTrigger, ...)
+///@param n Number of listening slots (0 through n-1)
 ///@param onTrigger
 
 // Capture arguments
@@ -11,17 +11,15 @@ if (argument_count > 1) {
 }
 var argc = array_length_1d(args);
 
-var conditionPayload = args[0];
+var n = args[0];
 var onTrigger = args[1];
-var onUntrigger = undefined;
 var onInterrupt = undefined;
 var forceHelper = false;
+var orMode = false;
 var keepAlive = false;
+var runOnInterrupt = false;
 for (var i = 2; i < argc; i++) {
 	switch (args[i]) {
-		case "onUntrigger":
-			onUntrigger = args[++i];
-		break;
 		case "onInterrupt":
 			onInterrupt = args[++i];
 		break;
@@ -31,8 +29,17 @@ for (var i = 2; i < argc; i++) {
 		case "forceHelper":
 			forceHelper = true;
 		break;
+		case "and":
+			orMode = false;
+		break;
+		case "or":
+			orMode = true;
+		break;
+		case "runOnInterrupt":
+			runOnInterrupt = true;
+		break;
 	}
 }
 
 // Insert worker made to order
-__gmtwerk_insert__(__responder_builder__(conditionPayload, onTrigger, keepAlive, onUntrigger, onInterrupt), forceHelper);
+__gmtwerk_insert__(__collector_builder__(n, orMode, keepAlive, onTrigger, onInterrupt, runOnInterrupt), forceHelper);
