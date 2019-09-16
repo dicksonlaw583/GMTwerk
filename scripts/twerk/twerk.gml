@@ -1,4 +1,5 @@
 ///@func twerk(<timeUnits>)
+//IMPORTANT: If this script is modified, please also modify __gmtwerk_host__ Step event to match!
 
 // Macros
 #macro stepSeconds *room_speed

@@ -11,3 +11,9 @@ assert_equal(__gmtwerk_host__.__gmtwerk__, [
 	__timekeeper_builder__(0, true, [3*room_speed, beep, 5*room_speed, beep], false, undefined),
 	__timekeeper_builder__(8*room_speed, false, [1*room_speed, beep, 0*room_speed, beep], false, undefined)
 ]);
+assert_equal(__gmtwerk_host__.__gmtwerk_owner__, [
+	__gmtwerk_host__,
+	__gmtwerk_host__,
+	__gmtwerk_host__,
+	__gmtwerk_host__
+]);

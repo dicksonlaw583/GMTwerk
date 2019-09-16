@@ -1,4 +1,5 @@
 ///@func gmtwerk()
+//IMPORTANT: If this script is modified, please also modify __gmtwerk_host__ Create event to match!
 
 enum GMTWERK_STATE {
 	ACTIVE = 1,

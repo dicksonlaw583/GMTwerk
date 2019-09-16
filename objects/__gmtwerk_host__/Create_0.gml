@@ -1,2 +1,3 @@
 ///@description Setup
-gmtwerk();
+__gmtwerk__ = [];
+__gmtwerk_owner__ = [];
