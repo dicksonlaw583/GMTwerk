@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "74fcab07-15e4-4cd4-a705-52871c279789",
+            "Value": {
+                "id": "dc34ba60-3406-4dd2-a517-f8a5f63945c9",
+                "resourcePath": "views\\74fcab07-15e4-4cd4-a705-52871c279789.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "7569b3de-75de-44f0-be06-4f95a8f5d6f6",
             "Value": {
                 "id": "e90ddf5e-8ba0-4268-b96e-9d7195715f08",
@@ -359,6 +367,14 @@
             }
         },
         {
+            "Key": "8a6c54a5-c548-4ea4-aa38-4715d839e661",
+            "Value": {
+                "id": "1e790c4a-3f1e-4b4c-9dfa-4ec2b6243448",
+                "resourcePath": "scripts\\gmtwerk_test_logger\\gmtwerk_test_logger.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8ccfd836-e6a8-4778-ac59-c65e0eee15e8",
             "Value": {
                 "id": "4b7dcdc4-0337-40e6-96f7-c4871d88f6b4",
@@ -423,6 +439,14 @@
             }
         },
         {
+            "Key": "abbc1268-1945-4779-aab3-6907b0024f3e",
+            "Value": {
+                "id": "f4f51cbf-70da-46bc-ae15-c3bbbaaab274",
+                "resourcePath": "scripts\\Logger\\Logger.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ac5f1076-19ec-4122-9efb-8201525b6d66",
             "Value": {
                 "id": "82c2ef96-89c8-420b-8bc2-af558fe7cdfa",
@@ -459,6 +483,14 @@
             "Value": {
                 "id": "af2ad6c9-8ade-4ad4-9f02-1bffb35e9de0",
                 "resourcePath": "scripts\\gmtwerk_suite_play_sound\\gmtwerk_suite_play_sound.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b74709c9-e36d-4122-a0db-e044e9edbfdb",
+            "Value": {
+                "id": "6c1acb58-1663-49c6-88d4-92502dbeeb58",
+                "resourcePath": "scripts\\__logger_runner__\\__logger_runner__.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -599,6 +631,14 @@
             }
         },
         {
+            "Key": "d6accf05-a3f7-41aa-99c9-6020fd2e9359",
+            "Value": {
+                "id": "e6f7312f-7850-4b93-9f9d-4e577196a6d9",
+                "resourcePath": "scripts\\__logger_builder__\\__logger_builder__.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d91575a6-58d8-4345-9f86-e611d9dd7903",
             "Value": {
                 "id": "eb2ccf95-b04e-442f-873f-c6d9f25befde",
@@ -619,6 +659,14 @@
             "Value": {
                 "id": "7be31322-a3e5-4549-8732-43372a3bb079",
                 "resourcePath": "scripts\\twerk\\twerk.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "df18d968-cf85-4812-8811-5a0270c25622",
+            "Value": {
+                "id": "7c920a19-bb73-4317-8758-ebc9f9f2a977",
+                "resourcePath": "scripts\\gmtwerk_logger_get\\gmtwerk_logger_get.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -775,19 +823,24 @@
         "fc72eb11-de82-46ea-a4cc-f449c0f61b4c",
         "c4659b79-7ff1-4f08-b0cb-83c7843fad16",
         "cc09c4d1-bf42-45cb-a37a-1153b3ad585a",
+        "d6accf05-a3f7-41aa-99c9-6020fd2e9359",
+        "abbc1268-1945-4779-aab3-6907b0024f3e",
+        "b74709c9-e36d-4122-a0db-e044e9edbfdb",
+        "df18d968-cf85-4812-8811-5a0270c25622",
         "89db20b6-f03f-4e1f-b528-2abba34743a4",
         "aec31d85-d99d-441e-8146-28d6026ad9b4",
         "7569b3de-75de-44f0-be06-4f95a8f5d6f6",
         "c0eef6b7-fcc9-43e7-a76a-e903914cf508",
         "85aa4b0f-67fe-4acd-bfea-0e62c0d5ae80",
         "62d7dc98-2a4d-4417-9cc1-c52a230ac44f",
+        "10407a2e-a877-4dcb-9828-5490ec52a1d8",
+        "8a6c54a5-c548-4ea4-aa38-4715d839e661",
         "c442980b-fa73-4438-876c-4841a2c20a1a",
         "4ecb1384-5acb-40e8-b74b-f57c859e89e7",
         "b9ecf92e-be12-411c-a6ab-bcc0a3a8195f",
         "6abadc2d-b84d-4828-8a80-84c7cb5e5369",
         "c3e31dde-453a-4e0b-b85f-0b27f61195a9",
         "b4511e2c-87c0-4e78-b90c-c747266708b1",
-        "10407a2e-a877-4dcb-9828-5490ec52a1d8",
         "77f862ff-e867-417a-b9e8-8743e21f5728"
     ],
     "tutorial": ""
