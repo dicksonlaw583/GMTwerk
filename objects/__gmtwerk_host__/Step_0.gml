@@ -10,7 +10,9 @@ for (var i = 0; i < twerkQueueSize; i++) {
 	// Run the actor if it's active (not paused, not dead or lost)
 	if (instance_exists(currentTwerkOwner)) {
 		if (currentTwerkActor[1]) {
-			script_execute(currentTwerkActor[0], currentTwerkActor, timeUnits, GMTWERK_STATE.ACTIVE);
+			with (currentTwerkOwner) {
+				script_execute(currentTwerkActor[0], currentTwerkActor, timeUnits, GMTWERK_STATE.ACTIVE);
+			}
 		}
 	} else if (currentTwerkOwner != noone) {
 		currentTwerkActor[1] = GMTWERK_STATE.INTERRUPTED;
