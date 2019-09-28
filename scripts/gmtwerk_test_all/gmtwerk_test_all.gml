@@ -12,6 +12,7 @@ gmtwerk_test_logger();
 gmtwerk_test_blend_kernels();
 gmtwerk_test_tween_kernels();
 gmtwerk_test_tweener();
+gmtwerk_test_tracker();
 ds_map_destroy(global.__gmtwerk_suite_callbacks__);
 time_b = current_time;
 show_debug_message("GMTwerk tests done in " + string(time_b-time_a) + "ms.");

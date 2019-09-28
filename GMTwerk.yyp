@@ -103,6 +103,22 @@
             }
         },
         {
+            "Key": "18d720ea-84e8-4193-96a7-36387fb770e8",
+            "Value": {
+                "id": "275e3cae-14c2-4685-b0c7-2c5c32f9a995",
+                "resourcePath": "scripts\\Tracker\\Tracker.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1927fb87-ea2f-41b2-98b3-927e0b39e956",
+            "Value": {
+                "id": "8eb2ef9f-a02f-4cb1-8134-9b765f7f099f",
+                "resourcePath": "scripts\\gmtwerk_test_tracker\\gmtwerk_test_tracker.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1d0842b6-7a74-4334-9532-4269afe53559",
             "Value": {
                 "id": "53d82f56-efbb-4d37-a70a-48001d8e1288",
@@ -231,6 +247,14 @@
             }
         },
         {
+            "Key": "3e1fea4f-30a7-4085-880d-66a096f74f14",
+            "Value": {
+                "id": "4556c5e9-cc54-41d6-ab43-11836139d297",
+                "resourcePath": "views\\3e1fea4f-30a7-4085-880d-66a096f74f14.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "3f6092ad-21b3-4e97-9ad5-631502b6a42a",
             "Value": {
                 "id": "3ec53b4f-07ed-4467-a87d-f0a4ef77f250",
@@ -275,6 +299,14 @@
             "Value": {
                 "id": "54b2d34c-27c5-489d-bd6d-28bc7a899f41",
                 "resourcePath": "scripts\\te_sine_inout\\te_sine_inout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c5a9a33-df5c-4a85-8ccd-8d3c46720ecc",
+            "Value": {
+                "id": "1da2cd25-1bb2-4c15-98df-333244ad8a13",
+                "resourcePath": "scripts\\__tracker_builder__\\__tracker_builder__.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -660,6 +692,14 @@
                 "id": "11bb7068-451b-4fcd-972c-bd6861faa45a",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a2242768-47bc-44f5-a289-ed3629a29542",
+            "Value": {
+                "id": "dd929727-52fd-4ccd-9b38-5d71b0d2dfbd",
+                "resourcePath": "scripts\\__tracker_runner__\\__tracker_runner__.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1111,6 +1151,14 @@
             }
         },
         {
+            "Key": "eb19410f-68ce-4602-aea1-93a5fd986438",
+            "Value": {
+                "id": "a36f0b73-9778-4a30-badd-11a60a3a8b58",
+                "resourcePath": "scripts\\gmtwerk_tracker_snap\\gmtwerk_tracker_snap.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ebdc53ab-c328-41c9-a5c0-7fb9f5845f2b",
             "Value": {
                 "id": "677a1ac6-8336-4101-b7c4-9bfc3cd32fe9",
@@ -1313,6 +1361,10 @@
         "9d03c1b7-f857-461f-8b4b-999114f5f731",
         "df108545-2a32-4a0a-b630-5d159ab421ea",
         "a49c7f3d-ad2d-4535-a7f0-1113c62e1835",
+        "4c5a9a33-df5c-4a85-8ccd-8d3c46720ecc",
+        "18d720ea-84e8-4193-96a7-36387fb770e8",
+        "a2242768-47bc-44f5-a289-ed3629a29542",
+        "eb19410f-68ce-4602-aea1-93a5fd986438",
         "89db20b6-f03f-4e1f-b528-2abba34743a4",
         "aec31d85-d99d-441e-8146-28d6026ad9b4",
         "7569b3de-75de-44f0-be06-4f95a8f5d6f6",
@@ -1324,6 +1376,7 @@
         "1562da6a-8939-4335-9359-856fbdba691c",
         "7c1cdfdf-64df-4d37-af7c-1813c5472997",
         "baa836bb-a559-4266-8259-96e4eef8ce13",
+        "1927fb87-ea2f-41b2-98b3-927e0b39e956",
         "c442980b-fa73-4438-876c-4841a2c20a1a",
         "4ecb1384-5acb-40e8-b74b-f57c859e89e7",
         "b9ecf92e-be12-411c-a6ab-bcc0a3a8195f",
