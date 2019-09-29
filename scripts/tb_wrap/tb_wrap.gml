@@ -28,7 +28,7 @@ if (is_undefined(argument3)) {
 	} else if (_c1 <= _c2) {
 		var result = lerp(_d0+_range, _d1, argument3);
 	} else {
-		var result = lerp(_d1+_range, _d0, argument3);
+		var result = lerp(_d0, _d1+_range, argument3);
 	}
 	return (result >= _range) ? result-_range : result;
 }
