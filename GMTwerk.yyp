@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "46226aae-5304-45ba-88e5-e4b117130da5",
+            "Value": {
+                "id": "897d77e2-aba9-4f8c-a9df-7cc96094f907",
+                "resourcePath": "scripts\\tk_wave_sinusoid\\tk_wave_sinusoid.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4923ace8-7944-4052-933a-049ad6e5639a",
             "Value": {
                 "id": "955cd995-48f6-4855-9765-6400e0963b6a",
@@ -308,6 +316,14 @@
                 "id": "1da2cd25-1bb2-4c15-98df-333244ad8a13",
                 "resourcePath": "scripts\\__tracker_builder__\\__tracker_builder__.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4d4c7161-83be-47e0-8a7d-810f60dc5f63",
+            "Value": {
+                "id": "2ac276d1-37d0-4c78-b5dc-23c32cae9471",
+                "resourcePath": "views\\4d4c7161-83be-47e0-8a7d-810f60dc5f63.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -484,6 +500,14 @@
                 "id": "e43e171c-59b0-491b-9671-a903de47df13",
                 "resourcePath": "options\\html5\\options_html5.yy",
                 "resourceType": "GMHtml5Options"
+            }
+        },
+        {
+            "Key": "75e6ae8e-bd62-439c-95e3-41f20d84e47e",
+            "Value": {
+                "id": "715219df-84e6-4062-af14-c32b3c8a48cc",
+                "resourcePath": "scripts\\tk_wave_sawtooth_reverse\\tk_wave_sawtooth_reverse.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -747,6 +771,14 @@
             "Value": {
                 "id": "9a14b04f-7c11-4b05-9a7f-108a3a717c25",
                 "resourcePath": "scripts\\te_quadratic_out\\te_quadratic_out.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a757c813-ecda-4c59-b285-caf93317e520",
+            "Value": {
+                "id": "e5d3a74f-0a3d-47a5-93ee-fa6f538c59f8",
+                "resourcePath": "scripts\\tk_wave_triangle\\tk_wave_triangle.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1255,6 +1287,14 @@
             }
         },
         {
+            "Key": "f2689035-6500-4c53-aab1-f05a3dec2265",
+            "Value": {
+                "id": "3fe457f1-a0d0-4c4a-b7e2-a21fa721068f",
+                "resourcePath": "scripts\\tk_wave_sawtooth\\tk_wave_sawtooth.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f3faf085-9d5a-4345-b852-af6812cffb92",
             "Value": {
                 "id": "daaef71c-6a36-4e79-b79a-a22f172db759",
@@ -1370,6 +1410,10 @@
         "f483e5a8-a26b-43d1-93b0-b5638add1dde",
         "b7637616-e677-4549-9403-99332276bf94",
         "bcc72d2a-808c-4088-b3a1-2d4e95e1a1e5",
+        "f2689035-6500-4c53-aab1-f05a3dec2265",
+        "75e6ae8e-bd62-439c-95e3-41f20d84e47e",
+        "a757c813-ecda-4c59-b285-caf93317e520",
+        "46226aae-5304-45ba-88e5-e4b117130da5",
         "f914f3f4-7baa-4b22-bebc-9aa09e889acb",
         "99f724c5-e349-4e28-bac7-7bd7ddac0268",
         "efd29266-9630-4b4d-b888-95546aa6a871",

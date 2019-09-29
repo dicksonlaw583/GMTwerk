@@ -163,3 +163,187 @@ assert_equal(memory, [3, 1], "Path wrap twerk step 7 memory");
 assert_equal(tk_path(pathArg, memory, 1, 350, 30, 1), 350, "Path wrap twerk step 8");
 assert_equal(memory, [0, 2], "Path wrap twerk step 8 memory");
 #endregion
+
+#region Test + sawtooth wave
+var waveArg = [4, true]
+memory = [];
+tk_wave_sawtooth(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+ Sawtooth wave twerk init failed");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 5, "+ Sawtooth wave twerk step 1");
+assert_equal(memory, [1, 0], "+ Sawtooth wave twerk step 1 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 6, "+ Sawtooth wave twerk step 2");
+assert_equal(memory, [2, 0], "+ Sawtooth wave twerk step 2 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 7, "+ Sawtooth wave twerk step 3");
+assert_equal(memory, [3, 0], "+ Sawtooth wave twerk step 3 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 4, "+ Sawtooth wave twerk step 4");
+assert_equal(memory, [0, 1], "+ Sawtooth wave twerk step 4 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 5, "+ Sawtooth wave twerk step 5");
+assert_equal(memory, [1, 1], "+ Sawtooth wave twerk step 5 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 6, "+ Sawtooth wave twerk step 6");
+assert_equal(memory, [2, 1], "+ Sawtooth wave twerk step 6 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 7, "+ Sawtooth wave twerk step 7");
+assert_equal(memory, [3, 1], "+ Sawtooth wave twerk step 7 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 4, "+ Sawtooth wave twerk step 8");
+assert_equal(memory, [0, 2], "+ Sawtooth wave twerk step 8 memory");
+#endregion
+
+#region Test +/- sawtooth wave
+var waveArg = [4, false]
+memory = [];
+tk_wave_sawtooth(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+/- Sawtooth wave twerk init failed");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 6, "+/- Sawtooth wave twerk step 1");
+assert_equal(memory, [1, 0], "+/- Sawtooth wave twerk step 1 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 8, "+/- Sawtooth wave twerk step 2");
+assert_equal(memory, [2, 0], "+/- Sawtooth wave twerk step 2 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 2, "+/- Sawtooth wave twerk step 3");
+assert_equal(memory, [3, 0], "+/- Sawtooth wave twerk step 3 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sawtooth wave twerk step 4");
+assert_equal(memory, [0, 1], "+/- Sawtooth wave twerk step 4 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 6, "+/- Sawtooth wave twerk step 5");
+assert_equal(memory, [1, 1], "+/- Sawtooth wave twerk step 5 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 8, "+/- Sawtooth wave twerk step 6");
+assert_equal(memory, [2, 1], "+/- Sawtooth wave twerk step 6 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 2, "+/- Sawtooth wave twerk step 7");
+assert_equal(memory, [3, 1], "+/- Sawtooth wave twerk step 7 memory");
+assert_equal(tk_wave_sawtooth(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sawtooth wave twerk step 8");
+assert_equal(memory, [0, 2], "+/- Sawtooth wave twerk step 8 memory");
+#endregion
+
+#region Test + triangle wave
+var waveArg = [4, true]
+memory = [];
+tk_wave_triangle(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+ Triangle wave twerk init failed");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 6, "+ Triangle wave twerk step 1");
+assert_equal(memory, [1, 0], "+ Triangle wave twerk step 1 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 8, "+ Triangle wave twerk step 2");
+assert_equal(memory, [2, 0], "+ Triangle wave twerk step 2 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 6, "+ Triangle wave twerk step 3");
+assert_equal(memory, [3, 0], "+ Triangle wave twerk step 3 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+ Triangle wave twerk step 4");
+assert_equal(memory, [0, 1], "+ Triangle wave twerk step 4 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 6, "+ Triangle wave twerk step 5");
+assert_equal(memory, [1, 1], "+ Triangle wave twerk step 5 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 8, "+ Triangle wave twerk step 6");
+assert_equal(memory, [2, 1], "+ Triangle wave twerk step 6 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 6, "+ Triangle wave twerk step 7");
+assert_equal(memory, [3, 1], "+ Triangle wave twerk step 7 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+ Triangle wave twerk step 8");
+assert_equal(memory, [0, 2], "+ Triangle wave twerk step 8 memory");
+#endregion
+
+#region Test +/- triangle wave
+var waveArg = [4, false]
+memory = [];
+tk_wave_triangle(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+/- Triangle wave twerk init failed");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 8, "+/- Triangle wave twerk step 1");
+assert_equal(memory, [1, 0], "+/- Triangle wave twerk step 1 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+/- Triangle wave twerk step 2");
+assert_equal(memory, [2, 0], "+/- Triangle wave twerk step 2 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 0, "+/- Triangle wave twerk step 3");
+assert_equal(memory, [3, 0], "+/- Triangle wave twerk step 3 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+/- Triangle wave twerk step 4");
+assert_equal(memory, [0, 1], "+/- Triangle wave twerk step 4 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 8, "+/- Triangle wave twerk step 5");
+assert_equal(memory, [1, 1], "+/- Triangle wave twerk step 5 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+/- Triangle wave twerk step 6");
+assert_equal(memory, [2, 1], "+/- Triangle wave twerk step 6 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 0, "+/- Triangle wave twerk step 7");
+assert_equal(memory, [3, 1], "+/- Triangle wave twerk step 7 memory");
+assert_equal(tk_wave_triangle(waveArg, memory, 1, 4, 8, 1), 4, "+/- Triangle wave twerk step 8");
+assert_equal(memory, [0, 2], "+/- Triangle wave twerk step 8 memory");
+#endregion
+
+#region Test + reverse sawtooth wave
+var waveArg = [4, true]
+memory = [];
+tk_wave_sawtooth_reverse(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+ Reverse Sawtooth wave twerk init failed");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 7, "+ Reverse Sawtooth wave twerk step 1");
+assert_equal(memory, [1, 0], "+ Reverse Sawtooth wave twerk step 1 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 6, "+ Reverse Sawtooth wave twerk step 2");
+assert_equal(memory, [2, 0], "+ Reverse Sawtooth wave twerk step 2 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 5, "+ Reverse Sawtooth wave twerk step 3");
+assert_equal(memory, [3, 0], "+ Reverse Sawtooth wave twerk step 3 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 8, "+ Reverse Sawtooth wave twerk step 4");
+assert_equal(memory, [0, 1], "+ Reverse Sawtooth wave twerk step 4 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 7, "+ Reverse Sawtooth wave twerk step 5");
+assert_equal(memory, [1, 1], "+ Reverse Sawtooth wave twerk step 5 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 6, "+ Reverse Sawtooth wave twerk step 6");
+assert_equal(memory, [2, 1], "+ Reverse Sawtooth wave twerk step 6 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 5, "+ Reverse Sawtooth wave twerk step 7");
+assert_equal(memory, [3, 1], "+ Reverse Sawtooth wave twerk step 7 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 8, "+ Reverse Sawtooth wave twerk step 8");
+assert_equal(memory, [0, 2], "+ Reverse Sawtooth wave twerk step 8 memory");
+#endregion
+
+#region Test +/- reverse sawtooth wave
+var waveArg = [4, false]
+memory = [];
+tk_wave_sawtooth_reverse(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+/- Reverse Sawtooth wave twerk init failed");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 6, "+/- Reverse Sawtooth wave twerk step 1");
+assert_equal(memory, [1, 0], "+/- Reverse Sawtooth wave twerk step 1 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 4, "+/- Reverse Sawtooth wave twerk step 2");
+assert_equal(memory, [2, 0], "+/- Reverse Sawtooth wave twerk step 2 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 2, "+/- Reverse Sawtooth wave twerk step 3");
+assert_equal(memory, [3, 0], "+/- Reverse Sawtooth wave twerk step 3 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 8, "+/- Reverse Sawtooth wave twerk step 4");
+assert_equal(memory, [0, 1], "+/- Reverse Sawtooth wave twerk step 4 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 6, "+/- Reverse Sawtooth wave twerk step 5");
+assert_equal(memory, [1, 1], "+/- Reverse Sawtooth wave twerk step 5 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 4, "+/- Reverse Sawtooth wave twerk step 6");
+assert_equal(memory, [2, 1], "+/- Reverse Sawtooth wave twerk step 6 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 2, "+/- Reverse Sawtooth wave twerk step 7");
+assert_equal(memory, [3, 1], "+/- Reverse Sawtooth wave twerk step 7 memory");
+assert_equal(tk_wave_sawtooth_reverse(waveArg, memory, 1, 4, 8, 1), 8, "+/- Reverse Sawtooth wave twerk step 8");
+assert_equal(memory, [0, 2], "+/- Reverse Sawtooth wave twerk step 8 memory");
+#endregion
+
+#region Test + sinusoid wave
+var waveArg = [4, true]
+memory = [];
+tk_wave_sinusoid(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+ Sinusoid wave twerk init failed");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 6, "+ Sinusoid wave twerk step 1");
+assert_equal(memory, [1, 0], "+ Sinusoid wave twerk step 1 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 8, "+ Sinusoid wave twerk step 2");
+assert_equal(memory, [2, 0], "+ Sinusoid wave twerk step 2 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 6, "+ Sinusoid wave twerk step 3");
+assert_equal(memory, [3, 0], "+ Sinusoid wave twerk step 3 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+ Sinusoid wave twerk step 4");
+assert_equal(memory, [0, 1], "+ Sinusoid wave twerk step 4 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 6, "+ Sinusoid wave twerk step 5");
+assert_equal(memory, [1, 1], "+ Sinusoid wave twerk step 5 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 8, "+ Sinusoid wave twerk step 6");
+assert_equal(memory, [2, 1], "+ Sinusoid wave twerk step 6 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 6, "+ Sinusoid wave twerk step 7");
+assert_equal(memory, [3, 1], "+ Sinusoid wave twerk step 7 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+ Sinusoid wave twerk step 8");
+assert_equal(memory, [0, 2], "+ Sinusoid wave twerk step 8 memory");
+#endregion
+
+#region Test +/- sinusoid wave
+var waveArg = [4, false]
+memory = [];
+tk_wave_sinusoid(waveArg, memory, 0, 4, 8, undefined);
+assert_equal(memory, [0, 0], "+/- Sinusoid wave twerk init failed");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 8, "+/- Sinusoid wave twerk step 1");
+assert_equal(memory, [1, 0], "+/- Sinusoid wave twerk step 1 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sinusoid wave twerk step 2");
+assert_equal(memory, [2, 0], "+/- Sinusoid wave twerk step 2 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 0, "+/- Sinusoid wave twerk step 3");
+assert_equal(memory, [3, 0], "+/- Sinusoid wave twerk step 3 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sinusoid wave twerk step 4");
+assert_equal(memory, [0, 1], "+/- Sinusoid wave twerk step 4 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 8, "+/- Sinusoid wave twerk step 5");
+assert_equal(memory, [1, 1], "+/- Sinusoid wave twerk step 5 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sinusoid wave twerk step 6");
+assert_equal(memory, [2, 1], "+/- Sinusoid wave twerk step 6 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 0, "+/- Sinusoid wave twerk step 7");
+assert_equal(memory, [3, 1], "+/- Sinusoid wave twerk step 7 memory");
+assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sinusoid wave twerk step 8");
+assert_equal(memory, [0, 2], "+/- Sinusoid wave twerk step 8 memory");
+#endregion
