@@ -13,7 +13,8 @@
         "d56a343b-e66e-45a8-a61d-8e5c070be212",
         "74fcab07-15e4-4cd4-a705-52871c279789",
         "1d0842b6-7a74-4334-9532-4269afe53559",
-        "3e1fea4f-30a7-4085-880d-66a096f74f14"
+        "3e1fea4f-30a7-4085-880d-66a096f74f14",
+        "b925e248-06f8-4542-a394-cf2c96bd88ec"
     ],
     "filterType": "GMScript",
     "folderName": "GMTwerk",
