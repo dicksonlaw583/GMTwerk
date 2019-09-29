@@ -402,3 +402,29 @@ for (var i = 1; i <= 20; i++) {
 	lastFlashState = currentFlashState;
 }
 #endregion
+
+#region Test shake
+var shakeArgs = [20, true, te_linear];
+memory = [];
+tk_shake(shakeArgs, memory, 0, 5, 10, undefined);
+assert_equal(memory, [0, 0], "Shake twerk init failed");
+for (var i = 1; i <= 19; i++) {
+	assert_in_range(tk_shake(shakeArgs, memory, 1, 5, 10, 1), 5, lerp(10, 5, i/20), "Shake twerk step " + string(i));
+	assert_equal(memory, [i, 0], "Shake twerk memory step " + string(i));
+}
+assert_equal(tk_shake(shakeArgs, memory, 1, 5, 10, 1), 5, "Shake twerk step 20");
+assert_equal(memory, [0, 1], "Shake twerk memory step 20");
+#endregion
+
+#region Test constant shake
+var shakeArgs = [20, true];
+memory = [];
+tk_shake_constant(shakeArgs, memory, 0, 5, 10, undefined);
+assert_equal(memory, [0, 0], "Constant Shake twerk init failed");
+for (var i = 1; i <= 19; i++) {
+	assert_in_range(tk_shake_constant(shakeArgs, memory, 1, 5, 10, 1), 5, 10, "Constant Shake twerk step " + string(i));
+	assert_equal(memory, [i, 0], "Constant Shake twerk memory step " + string(i));
+}
+assert_equal(tk_shake_constant(shakeArgs, memory, 1, 5, 10, 1), 5, "Constant Shake twerk step 20");
+assert_equal(memory, [0, 1], "Constant Shake twerk memory step 20");
+#endregion
