@@ -347,3 +347,58 @@ assert_equal(memory, [3, 1], "+/- Sinusoid wave twerk step 7 memory");
 assert_equalish(tk_wave_sinusoid(waveArg, memory, 1, 4, 8, 1), 4, "+/- Sinusoid wave twerk step 8");
 assert_equal(memory, [0, 2], "+/- Sinusoid wave twerk step 8 memory");
 #endregion
+
+#region Test simple flash
+var flashArgs = [3, 2];
+memory = [];
+tk_flash(flashArgs, memory, 0, 5, 10, undefined);
+assert_equal(memory, [3, true, 0], "Flash twerk init failed");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 1");
+assert_equal(memory, [2, true, 0], "Flash twerk step 1 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 2");
+assert_equal(memory, [1, true, 0], "Flash twerk step 2 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 3");
+assert_equal(memory, [2, false, 1], "Flash twerk step 3 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 5, "Flash twerk step 4");
+assert_equal(memory, [1, false, 1], "Flash twerk step 4 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 5, "Flash twerk step 5");
+assert_equal(memory, [3, true, 1], "Flash twerk step 5 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 6");
+assert_equal(memory, [2, true, 1], "Flash twerk step 6 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 7");
+assert_equal(memory, [1, true, 1], "Flash twerk step 7 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 10, "Flash twerk step 8");
+assert_equal(memory, [2, false, 2], "Flash twerk step 8 memory");
+assert_equal(tk_flash(flashArgs, memory, 1, 5, 10, 1), 5, "Flash twerk step 9");
+assert_equal(memory, [1, false, 2], "Flash twerk step 9 memory");
+#endregion
+
+#region Test flicker
+var flashArgs = [0.5, 2];
+memory = [];
+tk_flicker(flashArgs, memory, 0, 5, 10, undefined);
+assert_equal(memory, [2, true, 0], "Flicker twerk init failed");
+var lastFlashState = true;
+for (var i = 1; i <= 20; i++) {
+	var currentFlashState = memory[1];
+	var observedN = memory[2];
+	assert_equal(tk_flicker(flashArgs, memory, 1, 5, 10, 1), currentFlashState ? 10 : 5, "Flicker twerk step " + string(i));
+	assert_equal(memory[2], (currentFlashState && !memory[1]) ? observedN+1 : observedN, "Flicker twerk memory step " + string(i))
+	lastFlashState = currentFlashState;
+}
+#endregion
+
+#region Test flutter
+var flashArgs = [0.25, 0.75, 2];
+memory = [];
+tk_flutter(flashArgs, memory, 0, 5, 10, undefined);
+assert_equal(memory, [2, true, 0], "Flutter twerk init failed");
+var lastFlashState = true;
+for (var i = 1; i <= 20; i++) {
+	var currentFlashState = memory[1];
+	var observedN = memory[2];
+	assert_equal(tk_flutter(flashArgs, memory, 1, 5, 10, 1), currentFlashState ? 10 : 5, "Flutter twerk step " + string(i));
+	assert_equal(memory[2], (currentFlashState && !memory[1]) ? observedN+1 : observedN, "Flutter twerk memory step " + string(i))
+	lastFlashState = currentFlashState;
+}
+#endregion

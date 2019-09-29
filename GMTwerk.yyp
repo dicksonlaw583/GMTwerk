@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "3209ae39-d62a-49c4-a111-b0885c624fc7",
+            "Value": {
+                "id": "e0238952-b224-46e7-9f71-61eac10360d8",
+                "resourcePath": "views\\3209ae39-d62a-49c4-a111-b0885c624fc7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "32607e5b-359b-4e4e-8bca-3f00628864bf",
             "Value": {
                 "id": "4ee8ac9b-6443-437f-bfcb-411fefb4c50a",
@@ -307,6 +315,14 @@
             "Value": {
                 "id": "54b2d34c-27c5-489d-bd6d-28bc7a899f41",
                 "resourcePath": "scripts\\te_sine_inout\\te_sine_inout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4b3f3cb7-b139-4a39-9d10-815521bec43e",
+            "Value": {
+                "id": "7d883fd9-4df4-44b7-9d5d-a194f970ed11",
+                "resourcePath": "scripts\\tk_flash\\tk_flash.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1159,6 +1175,14 @@
             }
         },
         {
+            "Key": "e261ed7e-8652-4ee4-941a-84137d2bdb5e",
+            "Value": {
+                "id": "fe274cb9-f932-4da2-9544-71bca44aa223",
+                "resourcePath": "scripts\\tk_flutter\\tk_flutter.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e42bf5cc-3f46-4d67-a6d0-a4885a11ac3f",
             "Value": {
                 "id": "ddb1b0c2-d823-4bef-9692-1b76977eac93",
@@ -1235,6 +1259,14 @@
             "Value": {
                 "id": "fdd85c1f-d2c7-4563-b8a1-6fba91c65842",
                 "resourcePath": "scripts\\te_sine_in\\te_sine_in.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "edf66a8a-4a17-4a42-9f70-db48bcf86dcf",
+            "Value": {
+                "id": "0f866dd5-981f-4a52-98f7-d517587a59e3",
+                "resourcePath": "scripts\\tk_flicker\\tk_flicker.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1414,6 +1446,9 @@
         "75e6ae8e-bd62-439c-95e3-41f20d84e47e",
         "a757c813-ecda-4c59-b285-caf93317e520",
         "46226aae-5304-45ba-88e5-e4b117130da5",
+        "4b3f3cb7-b139-4a39-9d10-815521bec43e",
+        "edf66a8a-4a17-4a42-9f70-db48bcf86dcf",
+        "e261ed7e-8652-4ee4-941a-84137d2bdb5e",
         "f914f3f4-7baa-4b22-bebc-9aa09e889acb",
         "99f724c5-e349-4e28-bac7-7bd7ddac0268",
         "efd29266-9630-4b4d-b888-95546aa6a871",
